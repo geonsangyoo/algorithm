@@ -2,6 +2,7 @@ import sys
 sys.setrecursionlimit(100000)
 DEBUG = True
 #DEBUG = False
+
 if DEBUG == True:
     f = open("/Users/yoogeonsang/Documents/python/algorithm/#1890/input.txt", 'r')
 else:
@@ -20,6 +21,7 @@ def chart(h,w):
             sum+=chart(h,w_r)
     memo[h][w] = sum
     return sum
+
 while True:
     line = f.readline()
     if not line:
