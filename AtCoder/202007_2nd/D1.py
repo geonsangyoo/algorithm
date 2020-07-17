@@ -24,7 +24,7 @@ for idx,emt in enumerate(s):
     p=n-idx-1
     if emt=="0": #inverted to "1"
         ans=cnt_func((zero_first+(pow(2,p,input_one_count+1)))%(input_one_count+1))
-    else: #inverted to "2"
+    else: #inverted to "0"
         ans=cnt_func((one_first-(pow(2,p,input_one_count-1)))%(input_one_count-1))
     print(ans)
 f.close()
