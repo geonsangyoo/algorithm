@@ -4,7 +4,7 @@ DEBUG = True
 #DEBUG = False
 Ascii_start = 96
 if DEBUG:
-    f = open("#2233/input.txt")
+    f = open("input.txt")
 else:
     f = sys.stdin
 N = int(f.readline().strip())
