@@ -11,8 +11,6 @@ else:
   f = sys.stdin
 
 def visit_ew(x, y):
-  if x < 0 or y < 0:
-    return
   if (x, y) in erws and isVisit[erws.index((x, y))] == 0:
     isVisit[erws.index((x, y))] = 1
     visit_ew(x - 1, y)
